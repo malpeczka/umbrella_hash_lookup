@@ -54,7 +54,7 @@ def collect_hash_samples():
     print()
 
     while True:
-        hash_sample = input("Enter SHA256/SHA1/MD5 hash sample (empty to cancel): ")
+        hash_sample = input("Enter SHA256/SHA1/MD5 hash sample (empty to cancel): ").strip().lower()
 
         if hash_sample == "":
             break
