@@ -126,7 +126,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser()
 
     filter_group = parser.add_mutually_exclusive_group()
-    filter_group.add_argument("-u", "--print-unknown", action="store_true", help="print error message for hashes that are not found in Umbrella")
+    filter_group.add_argument("-u", "--print-unknown", action="store_true", help="print error message for hashes that are not found on Umbrella")
     filter_group.add_argument("-m", "--minimum-score", action="store", type=int, default=0, help="print only results with scores equal or higher than the provided number")
 
     input_group = parser.add_mutually_exclusive_group()
